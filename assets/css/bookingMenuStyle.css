@@ -4,7 +4,7 @@
 
 .booking-menu {
   /* border: solid 1px black; */
-  box-shadow: 0 0 1px;
+  box-shadow: 0 0 3px;
   width: 300px;
   height: 430px;
   padding: 12px;
@@ -67,25 +67,28 @@
   justify-content: space-between;
   align-items: center;
 }
-.quantity {
-  font-size: 14px;
-}
+
 .quantity button {
   border: none;
   background-color: unset;
   font-size: 20px;
   color: #f70;
 }
-/* .quantity div {
-  padding: 2px;
-} */
-.quantity span {
+.quantity > div span {
+  padding: 5px;
   font-size: 20px;
-  font-weight: bold;
+  display: block;
+  width: 20px;
 }
+.counter-div {
+  display: flex;
+  text-align: center;
+}
+
 #color {
   color: black;
 }
+/* BUTTON BOOKING MENU */
 .booking-menu > button {
   width: 100%;
   background-color: #f60;
@@ -93,12 +96,12 @@
   border: none;
   padding: 10px;
   border-radius: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 14px;
 }
 .booking-menu-bottom {
   color: #f70;
 }
 .booking-menu-bottom p:first-child {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }

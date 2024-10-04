@@ -66,13 +66,69 @@ header button {
 .beach-section img {
   object-fit: cover;
   width: 100%;
-  height: 470px;
+  height: 650px;
 }
 .bookingmenu-container {
   /* border: 3px solid green; */
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.left-column {
+  width: 280px;
+  height: 430pxs;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.left-column button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #f70;
+  font-size: 16px;
+  align-self: flex-start;
+}
+.left-column-menu {
+  font-size: 50px;
+  font-family: easyJet Headline, sans-serif;
+}
+.left-column > div > p:nth-child(2) {
+  /* border: 1px solid red; */
+  font-size: 50px;
+}
+/* BOOKING MENU BOTTOM */
+.booking-menu-bottom-absolute {
+  position: absolute;
+  /* border: 1px solid red; */
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  background-color: rgb(255, 255, 255, 0.7);
 }
 
+.bookingMenu-bottom {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid blue; */
+  height: 100%;
+  line-height: 20px;
+}
+
+.bookingMenu-bottom button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #f70;
+  font-size: 16px;
+  align-self: flex-start;
+}
 /* _________ */
 /* WORLDWIDE-DEFAULT */
 .worldwide-default {

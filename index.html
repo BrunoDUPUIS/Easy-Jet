@@ -7,12 +7,17 @@
     <link rel="shortcut icon" href="./assets/images/tab-logo.png" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/bookingMenuStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/7ce5341248.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <div>
-        <img src="./assets/images/ej-title.png" alt="" />
+        <img src="./assets/images/ej-title.png" alt="EasyJet image" />
         <a href="">Infos vol</a> <a href="">Voitures/Autres services</a
         ><a href="">Business</a> <a href="">Hôtels</a
         ><a href="">Mes réservations</a>
@@ -23,17 +28,89 @@
         <a href="">Se connecter</a>
         <a href="">Aide</a>
         <a href="">fr-FR</a>
-        <img src="./assets/images//drapeau.png" alt="" />
+        <img src="./assets/images//drapeau.png" alt="Drapeau Français" />
       </div>
     </header>
 
     <main>
       <section class="beach-section">
-        <img src="./assets/images/beach.jpg" alt="" />
+        <img src="./assets/images/beach.jpg" alt="Backgroud plage" />
+        <div class="beach-absolute">
+          <div class="container bookingmenu-container">
+            <section class="booking-menu">
+              <div class="checkbox">
+                <div>
+                  <label><input type="checkbox" /> Aller simple</label>
+                </div>
+              </div>
+
+              <div class="destination">
+                <div>
+                  <label
+                    >De: <input type="text" /><i class="fa-solid fa-list"></i
+                  ></label>
+                </div>
+
+                <div class="line"></div>
+                <div>
+                  <label>À: <input type="text" /></label>
+                </div>
+              </div>
+
+              <div class="date-picker">
+                <div class="aller">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Aller</p>
+                </div>
+
+                <div class="line"></div>
+                <div class="retour">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <p>Retour</p>
+                </div>
+              </div>
+
+              <div class="quantity">
+                <div>
+                  <p>Adultes (16+)</p>
+                  <div>
+                    <button><i class="fa-solid fa-minus"></i></button
+                    ><span>1</span
+                    ><button><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+                <div>
+                  <p>Enfants (2-15)</p>
+                  <div>
+                    <button id="color"><i class="fa-solid fa-minus"></i></button
+                    ><span>0</span
+                    ><button><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+                <div>
+                  <p>Bébés (<2)</p>
+                  <div>
+                    <button id="color"><i class="fa-solid fa-minus"></i></button
+                    ><span>0</span
+                    ><button><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <button>Afficher les vols ></button>
+
+              <div class="booking-menu-bottom">
+                <p>À propos de l'assistance spéciale ></p>
+                <p>Nous compensons nos émissions carbone ></p>
+              </div>
+            </section>
+          </div>
+          <div class="left-column"></div>
+        </div>
       </section>
 
       <section class="container worldwide worldwide-default">
-        <img src="./assets/images/worldwide-img.jpg" alt="" />
+        <img src="./assets/images/worldwide-img.jpg" alt="Image satellite" />
         <div>
           <h2>WORLDWIDE</h2>
           <p>Voyager encore plus loin à l'étranger.</p>
@@ -47,7 +124,7 @@
 
       <section class="carrousel1 container">
         <div class="card">
-          <img src="./assets/images/carousel1.jpg" alt="" />
+          <img src="./assets/images/carousel1.jpg" alt="femme en voiture" />
           <div>
             <p>Location de véhicule</p>
             <p>
@@ -59,7 +136,7 @@
         </div>
 
         <div class="card">
-          <img src="./assets/images/carousel2.jpg" alt="" />
+          <img src="./assets/images/carousel2.jpg" alt="femme parking" />
           <div>
             <p>Stationnement. Salons privés. Navettes</p>
             <p>
@@ -71,7 +148,7 @@
         </div>
 
         <div class="card">
-          <img src="./assets/images/carousel3.jpg" alt="" />
+          <img src="./assets/images/carousel3.jpg" alt="femme valise" />
           <div>
             <p>
               Vous prenez souvent l'avion ? Économiser du temps et de l'argent
@@ -85,7 +162,10 @@
         </div>
 
         <div class="card">
-          <img src="./assets/images/carousel4.jpg" alt="" />
+          <img
+            src="./assets/images/carousel4.jpg"
+            alt="femme arrière voiture"
+          />
           <div>
             <p>Stationnement. Salons privés. Navettes</p>
             <p>
@@ -97,7 +177,7 @@
         </div>
 
         <div class="card">
-          <img src="./assets/images/carousel5.jpg" alt="" />
+          <img src="./assets/images/carousel5.jpg" alt="couple" />
           <div>
             <p>Stationnement. Salons privés. Navettes</p>
             <p>
@@ -152,16 +232,38 @@
         <menu>
           <!-- /* mis dans des balises "p" pour y mettre des icones */ -->
 
-          <div class="card1"><p>Questions fréquentes</p></div>
-          <div class="card1"><p>Bagages</p></div>
-          <div class="card1"><p>Retard et annulations</p></div>
-          <div class="card1"><p>S'enregistrer en ligne</p></div>
-          <div class="card1"><p>Effectuer un changement</p></div>
+          <div class="card1">
+            <p>Questions fréquentes</p>
+            <i class="fa-regular fa-circle-question"></i>
+          </div>
+          <div class="card1">
+            <p>Bagages</p>
+            <i class="fa-solid fa-suitcase"></i>
+          </div>
+          <div class="card1">
+            <p>Retard et annulations</p>
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <div class="card1">
+            <p>S'enregistrer en ligne</p>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <div class="card1">
+            <p>Effectuer un changement</p>
+            <i class="fa-solid fa-pen"></i>
+          </div>
           <div class="card1">
             <p>Protection contre les prescriptions de voyage</p>
+            <i class="fa-solid fa-user-shield"></i>
           </div>
-          <div class="card1"><p>État du trafic</p></div>
-          <div class="card1"><p>Prendre l'avion avec des enfants</p></div>
+          <div class="card1">
+            <p>État du trafic</p>
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <div class="card1">
+            <p>Prendre l'avion avec des enfants</p>
+            <i class="fa-solid fa-children"></i>
+          </div>
         </menu>
       </section>
     </main>

@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+.booking-menu {
+  /* border: solid 1px black; */
+  box-shadow: 0 0 1px;
+  width: 300px;
+  height: 430px;
+  padding: 12px;
+  font-size: 13px;
+  background-color: white;
+}
+/* CHECKBOX */
+.checkbox {
+  margin-bottom: 10px;
+}
+.checkbox input {
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+.checkbox label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* --------- */
+/* DESTINATION */
+.destination {
+  border: solid 1px #eee;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 180px;
+  border-bottom: solid 1px #eee;
+  margin: 0px auto;
+}
+.destination input {
+  border: none;
+  height: 34px;
+}
+/* ---------- */
+/* DATE */
+.date-picker {
+  border: solid 1px #eee;
+  color: #f70;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.date-picker > div {
+  line-height: 34px;
+}
+.aller,
+.retour {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+/* ---------- */
+/* QUANTITY */
+.quantity > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quantity {
+  font-size: 14px;
+}
+.quantity button {
+  border: none;
+  background-color: unset;
+  font-size: 20px;
+  color: #f70;
+}
+/* .quantity div {
+  padding: 2px;
+} */
+.quantity span {
+  font-size: 20px;
+  font-weight: bold;
+}
+#color {
+  color: black;
+}
+.booking-menu > button {
+  width: 100%;
+  background-color: #f60;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.booking-menu-bottom {
+  color: #f70;
+}
+.booking-menu-bottom p:first-child {
+  margin-bottom: 10px;
+}

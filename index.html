@@ -6,35 +6,51 @@
     <title>Easy Jet</title>
     <link rel="shortcut icon" href="./assets/images/tab-logo.png" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/stylesheet.css" />
     <link rel="stylesheet" href="./assets/css/bookingMenuStyle.css" />
     <script
       src="https://kit.fontawesome.com/7ce5341248.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
       <div>
+        <i class="fa-solid fa-bars phone-display white-icon"></i>
         <img src="./assets/images/ej-title.png" alt="EasyJet image" />
-        <a href="">Infos vol</a> <a href="">Voitures/Autres services</a
-        ><a href="">Business</a> <a href="">Hôtels</a
-        ><a href="">Mes réservations</a>
+        <a href="" class="hidden-1115">Infos vol</a>
+        <a href="" class="hidden-1115">Voitures/Autres services</a
+        ><a href="" class="hidden-1115">Business</a>
+        <a href="" class="hidden-1115">Hôtels</a
+        ><a href="" class="hidden-1115">Mes réservations</a>
       </div>
 
       <div>
-        <button>S'enregistrer</button>
-        <a href="">Se connecter</a>
-        <a href="">Aide</a>
-        <a href="">fr-FR</a>
-        <img src="./assets/images//drapeau.png" alt="Drapeau Français" />
+        <button class="hidden-670">S'enregistrer</button>
+        <div class="connect">
+          <i class="fa-regular fa-circle-user phone-display white-icon"></i
+          ><a href="">Se connecter</a>
+        </div>
+
+        <a href="" class="hidden-670">Aide</a>
+        <a href="" class="hidden-670">fr-FR</a>
+        <img
+          src="./assets/images//drapeau.png"
+          alt="Drapeau Français"
+          class="hidden-670"
+        />
       </div>
     </header>
 
     <main>
       <section class="beach-section">
-        <img src="./assets/images/beach.jpg" alt="Backgroud plage" />
+        <img
+          src="./assets/images/beach.jpg"
+          alt="Background plage"
+          class="visibility-hidden"
+        />
         <div class="beach-absolute">
           <div class="container bookingmenu-container">
             <section class="booking-menu">
@@ -104,7 +120,7 @@
                 <p>Nous compensons nos émissions carbone ></p>
               </div>
             </section>
-            <div class="left-column">
+            <div class="left-column hidden-670">
               <p class="left-column-menu">NAGER, DORMIR, MANGER, RECOMMENCER</p>
               <p>
                 Cet été détendez-vous à la plage : Baléares, Sardaigne, Sicile
@@ -120,30 +136,34 @@
         </div>
         <div class="booking-menu-bottom-absolute">
           <div class="bookingMenu-bottom container">
-            <div>
-              <p>Lisbonne</p>
-              <p>à partir de Paris Charles De Gaulle</p>
-              <p>29,95€ nov 2024</p>
-              <button>Réservez ></button>
+            <div class="offers">
+              <div>
+                <p>Lisbonne</p>
+                <p>à partir de Paris Charles De Gaulle</p>
+                <p>29,95€ nov 2024</p>
+                <button>Réservez ></button>
+              </div>
+
+              <div>
+                <p>Porto</p>
+                <p>à partir de Paris Charles De Gaulle</p>
+                <p>25,95€ oct 2024</p>
+                <button>Réservez ></button>
+              </div>
+              <div class="hidden-670">
+                <p>Faro</p>
+                <p>à partir de Paris Charles De Gaulle</p>
+                <p>39,95€ sept 2024</p>
+                <button>Réservez ></button>
+              </div>
+              <div class="hidden-1115">
+                <p>Bari</p>
+                <p>à partir de Paris Charles De Gaulle</p>
+                <p>19,95€ nov 2024</p>
+                <button>Réservez ></button>
+              </div>
             </div>
-            <div>
-              <p>Porto</p>
-              <p>à partir de Paris Charles De Gaulle</p>
-              <p>25,95€ oct 2024</p>
-              <button>Réservez ></button>
-            </div>
-            <div>
-              <p>Faro</p>
-              <p>à partir de Paris Charles De Gaulle</p>
-              <p>39,95€ sept 2024</p>
-              <button>Réservez ></button>
-            </div>
-            <div>
-              <p>Bari</p>
-              <p>à partir de Paris Charles De Gaulle</p>
-              <p>19,95€ nov 2024</p>
-              <button>Réservez ></button>
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </section>

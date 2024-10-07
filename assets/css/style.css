@@ -6,7 +6,7 @@ footer {
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0px auto;
   /* border: solid 1px red; */
 }
@@ -45,6 +45,11 @@ header button {
   border-radius: 3px;
   background-color: white;
   font-size: 16px;
+}
+
+/* Hide by default */
+.phone-display {
+  display: none;
 }
 
 /* ------------- */
@@ -111,13 +116,15 @@ header button {
 }
 
 .bookingMenu-bottom {
-  display: flex;
   font-size: 13px;
+  /* border: 1px solid blue; */
+  line-height: 20px;
+}
+
+.offers {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid blue; */
-  height: 100%;
-  line-height: 20px;
 }
 
 .bookingMenu-bottom button {
@@ -351,3 +358,50 @@ footer {
   margin-bottom: 10px;
   color: #433e3e;
 }
+/* POINTS DE RUPTURE */
+
+/* ===== A 670px =====*/
+.white-icon {
+  color: white;
+}
+@media (max-width: 670px) {
+  .phone-display {
+    display: inline;
+  }
+  .hidden-670 {
+    display: none;
+  }
+  .bookingmenu-container {
+    justify-content: center;
+  }
+  .visibility-hidden {
+    visibility: hidden;
+  }
+  .beach-section {
+    background-color: #f2f2f2;
+  }
+  .booking-menu-bottom-absolute {
+    background-color: white;
+  }
+  .fly-infos a {
+    display: none;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.connect {
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  A 1115px */
+@media (max-width: 1115px) {
+  .hidden-1115 {
+    display: none;
+  }
+}
+
+/*  A 960px */
